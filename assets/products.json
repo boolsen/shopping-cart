@@ -1,0 +1,68 @@
+{
+    "shoes": {
+        "Nike Air": {
+            "price": 45.99,
+            "description": "Light running shoes.",
+            "imgUrl": "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08a43894-8cc4-4d3b-983e-048c79642197/WMNS+AIR+MAX+PLUS.png",
+            "terrain": ["Asphalt", "Gravel"]
+        },
+        "Adidas Force": {
+            "price": 55.89,
+            "description": "All terrain running shoes. High grip.",
+            "imgUrl": "https://cdn.sneaker.no/media/catalog/product/cache/1/image/1800x1200/17f82f742ffe127f42dca9de82fb58b1/a/d/adidas-superstar-eg4958-skills-1_13.jpg",
+            "terrain": ["Off-road", "Hiking", "Grass"]
+        },
+        "Puma Pumpador": {
+            "price": 39.99,
+            "description": "Affordable high quality shoes for everyday use",
+            "imgUrl": "https://admin.mochishoes.com/product/359-396464/660/359-396464M14.jpg",
+            "terrain": ["Asphalt"]
+        },
+        "Salomon Speedcross": {
+            "price": 120.00,
+            "description": "Professional trail running shoes with aggressive grip.",
+            "imgUrl": "https://images.asics.com/is/image/asics/1011B025_001_SR_RT_GLB?$zoom$",
+            "terrain": ["Mud", "Forest", "Mountains"]
+        }
+    },
+    "apparel": {
+        "Dri-Fit Runner Tee": {
+            "price": 24.99,
+            "description": "Moisture-wicking fabric to keep you dry.",
+            "imgUrl": "https://static.nike.com/a/images/t_default/5f9733e8-5b43-42e1-87a4-07d4b4a1b026/dri-fit-mens-fitness-t-shirt-L16xXp.png",
+            "features": ["Breathable", "Reflective Straps"]
+        },
+        "Thermal Windbreaker": {
+            "price": 89.00,
+            "description": "Windproof jacket for cold weather training.",
+            "imgUrl": "https://images.clothes.com/windbreaker-thermal.jpg",
+            "features": ["Water-resistant", "Zip-pockets"]
+        },
+        "Compression Tights": {
+            "price": 35.50,
+            "description": "Muscle support for long distance runs.",
+            "imgUrl": "https://images.clothes.com/tights-black.jpg",
+            "features": ["Compression", "UV Protection"]
+        }
+    },
+    "accessories": {
+        "Hydro-Flask 24oz": {
+            "price": 34.95,
+            "description": "Insulated water bottle for long hikes.",
+            "imgUrl": "https://images.acc.com/bottle-blue.jpg",
+            "specs": ["BPA Free", "24h Cold"]
+        },
+        "Garmin Forerunner": {
+            "price": 199.99,
+            "description": "GPS Smartwatch with heart rate monitor.",
+            "imgUrl": "https://images.acc.com/garmin-watch.jpg",
+            "specs": ["GPS", "Waterproof", "Bluetooth"]
+        },
+        "Ergo Running Belt": {
+            "price": 15.00,
+            "description": "Slim belt to hold your phone and keys.",
+            "imgUrl": "https://images.acc.com/belt-black.jpg",
+            "specs": ["Elastic", "Sweat-proof"]
+        }
+    }
+}

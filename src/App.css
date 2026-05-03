@@ -1,0 +1,21 @@
+.App{
+    display: grid;
+    height: 100svh;
+    width: 100svw;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px auto;
+    grid-template-areas:    "header header"
+                            "sidepanel content";
+
+    .header {
+        grid-area: header;
+    }
+
+    .sidepanel {
+        grid-area: sidepanel;
+    }
+
+    .content {
+        grid-area: content;
+    }
+}
