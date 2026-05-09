@@ -1,4 +1,4 @@
-function CartItem({ product }) {
+function CartItem({ cartItem }) {
     return ( 
         <div className="cart-item">
             <span className="product-name">{product.name}</span>

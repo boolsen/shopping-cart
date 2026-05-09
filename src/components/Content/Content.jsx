@@ -2,7 +2,6 @@ import Card from "../Card/Card.jsx"
 import "./Content.css"
 
 function Content({ products, selectedCategory }) {
-    console.log(products, 'test');
 
     if (!products) {
         return <div className="loading">Loading products...</div>;

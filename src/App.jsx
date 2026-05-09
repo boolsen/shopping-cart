@@ -5,12 +5,14 @@ import Sidepanel from "./components/Sidepanel/Sidepanel.jsx"
 import Content from "./components/Content/Content.jsx"
 import { useEffect, useState } from "react"
 import { createContext, useContext } from 'react';
+import { CartContext } from "./CartContext.js"
 
 function App() {
 
   const [ products, setProducts ] = useState(null);
   const [ selectedCategory, setSelectedCategory ] = useState('shoes');
-  const ShoppingCartContext = createContext(null);
+  const [ cartItems, setCartItems ] = useState([]);
+
   useEffect(() => {
     async function loadData() {
       const productManager = new Products();
@@ -21,18 +23,44 @@ function App() {
     loadData();
   }, []);
 
+  function addToCart(product) {
+    setCartItems((prevItems) => {
+      const existingItem = prevItems.find((item) => item.name === product.name);
+
+      if (existingItem) {
+        return prevItems.map((item) =>
+          item.name === product.name 
+            ? { ...item, quantity: item.quantity + 1 } 
+            : item
+        );
+      }
+
+      return [...prevItems, { ...product, quantity: 1 }];
+    });
+  }
+
   return <div className="App">
-    <ShoppingCartContext>
-      <Header />
-    </ShoppingCartContext>
+     <Header />
     <Sidepanel 
         productCategories={products ? Object.keys(products) : []} 
         setSelectedCategory = {setSelectedCategory
       }/>
-    <Content 
-        products={products ? products[selectedCategory] : null}
-        selectedCategory={selectedCategory}
-      />
+    <CartContext.Provider value={{addToCart}}>
+      <Content 
+          products={products ? products[selectedCategory] : null}
+          selectedCategory={selectedCategory}
+        />
+    </CartContext.Provider>
+    {
+      cartItems.map((product) => {
+        <>
+          <p>{product.name}</p>
+          <p>blabla
+          </p>
+        </>
+
+      })
+    }
   </div>
 }
 

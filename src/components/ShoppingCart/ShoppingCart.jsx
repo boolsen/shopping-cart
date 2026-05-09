@@ -1,13 +1,17 @@
 import "./ShoppingCart.css"
 import CartItem from "../CartItem.jsx"
 
-function ShoppingCart() {
+function ShoppingCart({ inCartItems }) {
     const total = 8; // update calculation
     return (
         <div className="shopping-cart">
             <h3 className="shopping-cart">Your items</h3>
             <span className="total-price"></span>
-            <CartItem />
+            {
+                inCartItems.map((cartItem) => {
+                <CartItem cartItem={cartItem} />
+                })
+            }
             <button className="checkout">Checkout</button>
         </div>
      );
