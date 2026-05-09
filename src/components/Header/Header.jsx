@@ -1,10 +1,11 @@
-import "./Header.css"
+import "./Header.css";
+import shoppingCartLogo from "../../../assets/Shopping-Cart--Streamline-Outlined-Streamline-Material.png";
 
 function Header() {
     return ( <div className="header">
         <h1 className="logo">Shopalulu</h1>
         <div className="shopping-nav">
-            {/* Shopping cart icon with badges for number of items, +menu? */}
+            <img src={shoppingCartLogo} className="shopping-cart"></img>
         </div>
     </div> );
 }

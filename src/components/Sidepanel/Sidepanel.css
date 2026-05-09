@@ -1,0 +1,18 @@
+.sidepanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navigation-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
