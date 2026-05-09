@@ -40,7 +40,7 @@ function App() {
   }
 
   return <div className="App">
-     <Header />
+     <Header cartItems={cartItems} />
     <Sidepanel 
         productCategories={products ? Object.keys(products) : []} 
         setSelectedCategory = {setSelectedCategory
