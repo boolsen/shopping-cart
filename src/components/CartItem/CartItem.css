@@ -1,0 +1,26 @@
+.cart-item{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+
+    .change-quantity{
+        display: flex;
+        gap: 0.3rem;
+
+        & > * {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        button {
+            border: none;
+            background: rgb(165, 91, 255);
+            border-radius: 15%;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+    }
+}
